@@ -5,14 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HelloWorld {
+public class HelloWorldController {
 
 	@GetMapping("/hello")
 	public ModelAndView helloWorld() {
- 
 		String message = "Message From Hello World";
-		return new ModelAndView("helloworld", "message", message);
+		ModelAndView mv = new ModelAndView("helloworld", "message", message);
+		return mv;
 	}
+	
 	
 	@GetMapping("/")
 	public String welcomePage() {
