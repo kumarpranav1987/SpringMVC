@@ -8,6 +8,5 @@
 </head>
 <body>
 Hello ${name}
-<a href="sessionexample">Session Example</a>
 </body>
 </html>
